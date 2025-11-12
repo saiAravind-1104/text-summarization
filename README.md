@@ -77,7 +77,7 @@ echo "GROQ_API_KEY=your_api_key_here" > .env
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Run the app
-streamlit run app.py
+streamlit run src\app.py
 ```
 
 ### 2. In the web interface
@@ -194,7 +194,7 @@ uv pip sync
 
 ```bash
 # With auto-reload
-streamlit run app.py --server.runOnSave true
+streamlit run src\app.py --server.runOnSave true
 ```
 
 ## Security Best Practices
@@ -294,5 +294,5 @@ K. Sai Aravind
 # Complete setup in 3 commands
 uv venv && source .venv/bin/activate
 uv pip install streamlit python-dotenv validators langchain langchain-groq langchain-community youtube-transcript-api unstructured
-streamlit run app.py
+streamlit run src\app.py
 ```
