@@ -1,0 +1,19 @@
+[project]
+name = "text-summarization"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+     "dotenv>=0.9.9",
+     "langchain==0.3.2",
+     "langchain-community>=0.3.1",
+     "langchain-core>=0.3.63",
+     "langchain-groq>=0.3.2",
+     "pytube>=15.0.0",
+     "streamlit>=1.51.0",
+     "unstructured>=0.18.18",
+     "validators>=0.35.0",
+     "youtube-transcript-api>=1.2.3",
+     "yt-dlp>=2025.10.22",
+]
