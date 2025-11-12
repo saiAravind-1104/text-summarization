@@ -25,7 +25,7 @@ button = st.button(label="Summarize")
 
 # Prompt
 template = '''
-Summarize this text and give a 200-word response:
+Summarize this text, give a response within 200 words:
 
 {text}
 '''

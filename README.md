@@ -13,7 +13,7 @@ A Streamlit-based web application that generates concise summaries from web URLs
 
 ## Prerequisites
 
-- Python 3.8+
+- Python 3.12
 - [uv](https://github.com/astral-sh/uv) package manager
 - Groq API key ([Get it here](https://console.groq.com))
 
@@ -35,8 +35,8 @@ pip install uv
 ### 2. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-name>
+git clone https://github.com/saiAravind-1104/text-summarization.git
+cd text-summarization
 ```
 
 ### 3. Install dependencies using uv
