@@ -49,7 +49,7 @@ if button:
 
             # YouTube Case
             if "youtube.com" in url or "youtu.be" in url:
-                loader=YoutubeLoader(urladd_video_info=True)
+                loader=YoutubeLoader(url,add_video_info=True)
                 docs = loader.load()
 
             # Normal URL Case

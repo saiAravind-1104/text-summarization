@@ -172,30 +172,6 @@ The app handles various error scenarios:
 | "Please provide a valid URL" | Invalid URL format | Check URL format (must include http/https) |
 | "Unable to extract content" | Content loading failed | Try different URL or check internet connection |
 
-## Known Issues & Fixes
-
-### ⚠️ Important Bug Fix Required
-
-**Line 56** has a typo that will cause the app to crash:
-
-**Current (broken):**
-```python
-loader=YoutubeLoader(urladd_video_info=True)
-```
-
-**Fixed version:**
-```python
-loader = YoutubeLoader.from_youtube_url(url, add_video_info=True)
-```
-
-### Other Considerations
-
-- **SSL Verification**: Disabled for `UnstructuredURLLoader` (line 62: `ssl_verify=False`)
-  - Use with caution on untrusted networks
-  - Consider enabling for production: `ssl_verify=True`
-
-- **YouTube Transcripts**: Only works if video has captions/transcripts available
-
 ## Development
 
 ### Using uv for dependency management
@@ -286,9 +262,6 @@ uv pip install --upgrade youtube-transcript-api
 - **Model latency**: ~1-2 seconds (Groq's LLaMA 3.1 is optimized for speed)
 - **Supported content length**: Up to ~8K tokens (model context limit)
 
-## License
-
-[Specify your license here]
 
 ## Contributing
 
@@ -302,7 +275,7 @@ Contributions are welcome! To contribute:
 
 ## Author
 
-[Your Name]
+K. Sai Aravind
 
 ## Acknowledgments
 
